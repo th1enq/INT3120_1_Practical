@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="250dp"
+    android:viewportWidth="200"
+    android:viewportHeight="250">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="#FFF8DC"
+        android:pathData="M0,0 L200,0 L200,250 L0,250 Z"/>
+    
+    <!-- Mountain landscape -->
+    <!-- Sky -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0 L200,0 L200,120 L0,120 Z"/>
+    
+    <!-- Mountains -->
+    <path
+        android:fillColor="#696969"
+        android:pathData="M0,120 L40,60 L80,100 L120,40 L160,80 L200,60 L200,120 Z"/>
+    
+    <!-- Mountain shadows -->
+    <path
+        android:fillColor="#2F4F4F"
+        android:pathData="M40,60 L60,90 L80,100 L40,100 Z"/>
+    <path
+        android:fillColor="#2F4F4F"
+        android:pathData="M120,40 L140,70 L160,80 L120,80 Z"/>
+    
+    <!-- Ground -->
+    <path
+        android:fillColor="#9ACD32"
+        android:pathData="M0,120 L200,120 L200,200 L0,200 Z"/>
+    
+    <!-- Trees -->
+    <!-- Tree trunks -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M30,180 L30,120 L35,120 L35,180 Z"/>
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M170,190 L170,130 L175,130 L175,190 Z"/>
+    
+    <!-- Tree foliage -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M20,120 C15,110 20,100 35,100 C50,100 45,110 40,120 C45,130 35,140 20,140 C5,140 10,130 20,120 Z"/>
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M160,130 C155,120 160,110 175,110 C190,110 185,120 180,130 C185,140 175,150 160,150 C145,150 150,140 160,130 Z"/>
+    
+    <!-- Sun -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M170,30 C180,20 190,30 180,40 C190,50 180,60 170,50 C160,60 150,50 160,40 C150,30 160,20 170,30 Z"/>
+    
+    <!-- River -->
+    <path
+        android:fillColor="#4682B4"
+        android:pathData="M0,150 Q50,160 100,150 Q150,140 200,150 L200,170 Q150,160 100,170 Q50,180 0,170 Z"/>
+</vector>

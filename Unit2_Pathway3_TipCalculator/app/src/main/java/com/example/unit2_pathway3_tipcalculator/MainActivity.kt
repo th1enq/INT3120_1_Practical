@@ -282,7 +282,7 @@ private fun ResultRow(
     }
 }
 
-private fun calculateTipResult(
+fun calculateTipResult(
     amount: Double,
     tipPercent: Double = TipConstants.DEFAULT_TIP_PERCENT,
     roundUp: Boolean = false
