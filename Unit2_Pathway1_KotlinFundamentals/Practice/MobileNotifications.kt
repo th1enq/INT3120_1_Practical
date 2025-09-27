@@ -1,15 +1,15 @@
-fun printNotifications(numberOfNotifications: Int) {
-    if (numberOfNotifications < 100) {
-        println("You have $(numberOfNotifictions) notifications.")
-    } else {
-        println("Your phone is blowing up! You have 99+ notifications.")
+fun displayNotificationCount(notificationCount: Int) {
+    val message = when {
+        notificationCount >= 100 -> "Your phone is blowing up! You have 99+ notifications."
+        else -> "You have $notificationCount notifications."
     }
+    println(message)
 }
 
 fun main() {
-    var morningNotifications = 55
-    var eveningNotifications = 140  
+    val morningCount = 55
+    val eveningCount = 140  
 
-    printNotifications(morningNotifications)
-    printNotifications(eveningNotifications)
-}       
+    displayNotificationCount(morningCount)
+    displayNotificationCount(eveningCount)
+}           

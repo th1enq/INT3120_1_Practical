@@ -5,30 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74579111-cebe-4704-a180-686ee116bf80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeArticle/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit1_Pathway3_BirthdayCardApp/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit1_Pathway3_BirthdayCardApp/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit1_Pathway3_BirthdayCardApp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit1_Pathway3_BirthdayCardApp/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit1_Pathway3_BirthdayCardApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit1_Pathway3_BirthdayCardApp/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit1_Pathway3_BirthdayCardApp/app/src/main/java/com/example/birthdaycardapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit1_Pathway3_BirthdayCardApp/app/src/main/java/com/example/birthdaycardapp/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit2_Pathway2_ClickBehavior/app/src/main/res/drawable/lemon_drink.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit2_Pathway2_ClickBehavior/app/src/main/res/drawable/lemon_restart.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit2_Pathway2_ClickBehavior/app/src/main/res/drawable/lemon_squeeze.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit2_Pathway2_ClickBehavior/app/src/main/res/drawable/lemon_tree.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit2_Pathway2_ClickBehavior/app/src/main/res/values/dimen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit2_Pathway2_DiceRollerApp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit2_Pathway2_DiceRollerApp/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit2_Pathway2_DiceRollerApp/app/src/main/java/com/example/diceroller/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit2_Pathway2_DiceRollerApp/app/src/main/java/com/example/diceroller/MainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +26,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="33GlmMTtmFxR0xdOJTr2UrqCP1R" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -63,7 +48,8 @@
     "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/th1enq/Documents/INT3120_1_Practical/Unit1_Pathway3_ComposeBasics/ComposeArticle"
   }
 }]]></component>
   <component name="TaskManager">

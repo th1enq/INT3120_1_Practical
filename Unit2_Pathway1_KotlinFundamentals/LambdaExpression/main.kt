@@ -1,31 +1,20 @@
-val trick = {
-    println("No treats!")
-}
-
-val treat = {
-    println("Have a treat!")
-}
-
-fun trickOrTreat(isTrick: Boolean, extraTreat: ((Int) -> String)?): () -> Unit {
+fun executeAction(isTrick: Boolean, bonusReward: ((Int) -> String)? = null) {
+    val trickAction = { println("No treats!") }
+    val treatAction = { println("Have a treat!") }
+    
     if (isTrick) {
-        return trick
+        trickAction()
     } else {
-        if (extraTreat != null) {
-            println(extraTreat(5))
-        }
-        return treat
+        bonusReward?.let { reward -> println(reward(5)) }
+        treatAction()
     }
 }
 
 fun main() {
-    // val coins: (Int) -> String = { quantity ->
-    //     "$quantity quarters"
-    // }
+    val coinReward: (Int) -> String = { amount -> "$amount quarters " }
 
-    val treatFunction = trickOrTreat(false, { "$it quarters "})
-    val trickFunction = trickOrTreat(true, null)
     repeat(4) {
-        treatFunction()
+        executeAction(false, coinReward)
     }   
-    trickFunction()
+    executeAction(true)
 }

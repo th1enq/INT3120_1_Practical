@@ -4,12 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -33,32 +28,37 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background,
                 ) {
-                    TaskCompletedScreen()
+                    TaskCompletedScreen(
+                        message = stringResource(R.string.all_task_completed),
+                        subMessage = stringResource(R.string.nice_work),
+                        imageRes = R.drawable.ic_task_completed
+                    )
                 }
             }
-
         }
     }
 }
 
 @Composable
-fun TaskCompletedScreen() {
+fun TaskCompletedScreen(
+    message: String,
+    subMessage: String,
+    imageRes: Int,
+    modifier: Modifier = Modifier
+) {
     Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight(),
+        modifier = modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        val image = painterResource(R.drawable.ic_task_completed)
-        Image(painter = image, contentDescription = null)
+        Image(painter = painterResource(imageRes), contentDescription = null)
         Text(
-            text = stringResource(R.string.all_task_completed),
+            text = message,
             modifier = Modifier.padding(top = 24.dp, bottom = 8.dp),
             fontWeight = FontWeight.Bold
         )
         Text(
-            text = stringResource(R.string.nice_work),
+            text = subMessage,
             fontSize = 16.sp
         )
     }
@@ -68,6 +68,10 @@ fun TaskCompletedScreen() {
 @Composable
 fun TaskCompletedPreview() {
     TaskManagerTheme {
-        TaskCompletedScreen()
+        TaskCompletedScreen(
+            message = stringResource(R.string.all_task_completed),
+            subMessage = stringResource(R.string.nice_work),
+            imageRes = R.drawable.ic_task_completed
+        )
     }
 }

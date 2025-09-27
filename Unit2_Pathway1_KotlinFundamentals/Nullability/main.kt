@@ -1,7 +1,15 @@
+fun getNameLength(actorName: String?): Int {
+    return if (actorName != null) {
+        actorName.length
+    } else {
+        0
+    }
+}
+
 fun main() {
-    var favoriteActor: String? = "Kim Ji Won"
+    val favoriteActor: String? = "Kim Ji Won"
 
-    var lengthOfName = favoriteActor?.length ?: 0
+    val nameLength = getNameLength(favoriteActor)
 
-    println("The number of characters in your favorite actor's name is $lengthOfName.")
+    println("The number of characters in your favorite actor's name is $nameLength.")
 }

@@ -1,40 +1,39 @@
-open class Phone(var isScreenLightOn: Boolean = false){
-    open fun switchOn() {
-        isScreenLightOn = true
+abstract class Device {
+    protected var screenState: Boolean = false
+    
+    abstract fun powerOn()
+    
+    fun powerOff() {
+        screenState = false
     }
     
-    fun switchOff() {
-        isScreenLightOn = false
-    }
-    
-    fun checkPhoneScreenLight() {
-        val phoneScreenLight = if (isScreenLightOn) "on" else "off"
-        println("The phone screen's light is $phoneScreenLight.")
+    fun displayScreenStatus() {
+        println("The phone screen's light is ${if (screenState) "on" else "off"}.")
     }
 }
 
-class FoldablePhone(var isFolded: Boolean = true): Phone() {
-    override fun switchOn() {
-        if (!isFolded) {
-            isScreenLightOn = true
-        }
+class FoldablePhone: Device() {
+    private var foldingState: Boolean = true
+    
+    override fun powerOn() {
+        screenState = !foldingState
     }
     
-    fun fold() {
-        isFolded = true
+    fun foldDevice() {
+        foldingState = true
     }
     
-    fun unfold() {
-        isFolded = false    
+    fun unfoldDevice() {
+        foldingState = false    
     }
 }
 
 fun main() {    
     val newFoldablePhone = FoldablePhone()
     
-    newFoldablePhone.switchOn()
-    newFoldablePhone.checkPhoneScreenLight()
-    newFoldablePhone.unfold()
-    newFoldablePhone.switchOn()
-    newFoldablePhone.checkPhoneScreenLight()
+    newFoldablePhone.powerOn()
+    newFoldablePhone.displayScreenStatus()
+    newFoldablePhone.unfoldDevice()
+    newFoldablePhone.powerOn()
+    newFoldablePhone.displayScreenStatus()
 }

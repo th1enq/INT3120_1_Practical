@@ -5,9 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -19,7 +17,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.composearticle.ui.theme.ComposeArticleTheme
 
 class MainActivity : ComponentActivity() {
@@ -49,6 +46,7 @@ fun ComposeArticleApp() {
     )
 }
 
+/** High-level article card */
 @Composable
 private fun ArticleCard(
     title: String,
@@ -57,21 +55,49 @@ private fun ArticleCard(
     imagePainter: Painter,
     modifier: Modifier = Modifier,
 ) {
-    Column (modifier = modifier) {
-        Image(painter = imagePainter, contentDescription = null)
+    Column(modifier = modifier.fillMaxSize()) {
+        ArticleImage(imagePainter = imagePainter)
+        ArticleContent(
+            title = title,
+            shortDescription = shortDescription,
+            longDescription = longDescription
+        )
+    }
+}
+
+/** Extracted image composable */
+@Composable
+private fun ArticleImage(imagePainter: Painter) {
+    Image(
+        painter = imagePainter,
+        contentDescription = null,
+        modifier = Modifier.fillMaxWidth()
+    )
+}
+
+/** Extracted text content composable */
+@Composable
+private fun ArticleContent(
+    title: String,
+    shortDescription: String,
+    longDescription: String,
+    modifier: Modifier = Modifier
+) {
+    Column(modifier = modifier.padding(16.dp)) {
         Text(
             text = title,
-            modifier = Modifier.padding(16.dp),
-            fontSize = 24.sp
+            style = MaterialTheme.typography.headlineSmall,
+            modifier = Modifier.padding(bottom = 8.dp)
         )
         Text(
             text = shortDescription,
-            modifier = Modifier.padding(start = 16.dp, end = 16.dp),
-            textAlign = TextAlign.Justify
+            style = MaterialTheme.typography.bodyMedium,
+            textAlign = TextAlign.Justify,
+            modifier = Modifier.padding(bottom = 8.dp)
         )
         Text(
             text = longDescription,
-            modifier = Modifier.padding(16.dp),
+            style = MaterialTheme.typography.bodyMedium,
             textAlign = TextAlign.Justify
         )
     }
