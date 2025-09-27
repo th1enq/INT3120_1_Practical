@@ -17,6 +17,6 @@ fun main() {
         "Red" -> println("Stop")
         "Yellow", "Amber" -> println("Slow")
         "Green" -> println("Go")
-        else -> println("Invalid traffic-light color")
+        else -> println("Invalid traffic-light color")  
     }
 }
