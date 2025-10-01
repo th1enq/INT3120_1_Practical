@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="150dp"
+    android:viewportWidth="200"
+    android:viewportHeight="150">
+    
+    <rect
+        android:width="200"
+        android:height="150"
+        android:fillColor="#FCE4EC" />
+    
+    <rect
+        android:x="35"
+        android:y="35"
+        android:width="130"
+        android:height="80"
+        android:fillColor="#E91E63" />
+</vector>
