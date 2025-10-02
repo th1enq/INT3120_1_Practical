@@ -27,10 +27,10 @@ class ScreenTests {
             list = emptyList()
         ),
         currentPlace = Place(
-            name = R.string.pho_gia_truyen_title,
-            description = R.string.pho_gia_truyen_description,
-            address = R.string.pho_gia_truyen_address,
-            photo = R.drawable.pho_gia_truyen
+            name = R.string.kavkaz_title,
+            description = R.string.kavkaz_description,
+            address = R.string.kavkaz_address,
+            photo = R.drawable.kavkaz
         )
     )
 

@@ -71,7 +71,7 @@ class MyCityNavigationTest {
 
     private fun navigateToPlaceScreen() {
         composeTestRule.onNodeWithStringId(R.string.restaurants_category).performClick()
-        composeTestRule.onNodeWithStringId(R.string.pho_gia_truyen_title).performClick()
+        composeTestRule.onNodeWithStringId(R.string.kavkaz_title).performClick()
     }
 
     private fun performNavigateUp() {

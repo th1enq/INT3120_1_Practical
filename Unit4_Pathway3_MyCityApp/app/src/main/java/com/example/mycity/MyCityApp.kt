@@ -232,7 +232,7 @@ fun MyCityAppBar(
                 )
                 if (title == R.string.app_name) {
                     Image(
-                        painter = painterResource(id = R.drawable.emblem_of_hanoi),
+                        painter = painterResource(id = R.drawable.emblem_of_yerevan),
                         contentDescription = null,
                         modifier = Modifier
                             .size(50.dp)

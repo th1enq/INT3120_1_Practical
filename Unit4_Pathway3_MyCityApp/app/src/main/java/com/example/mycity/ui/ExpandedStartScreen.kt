@@ -93,15 +93,15 @@ fun StartScreen(modifier: Modifier = Modifier) {
             shape = MaterialTheme.shapes.medium
         ) {
             Column {
-                Image(painter = painterResource(id = R.drawable.hanoi), contentDescription = null)
+                Image(painter = painterResource(id = R.drawable.yerevan), contentDescription = null)
                 Column(Modifier.padding(dimensionResource(id = R.dimen.padding_medium))) {
                     Text(
-                        text = stringResource(id = R.string.hanoi_title),
+                        text = stringResource(id = R.string.yerevan_title),
                         style = MaterialTheme.typography.titleLarge,
                         modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_small))
                     )
                     Text(
-                        text = stringResource(id = R.string.hanoi_description),
+                        text = stringResource(id = R.string.yerevan_description),
                         style = MaterialTheme.typography.bodyLarge,
                         textAlign = TextAlign.Justify
                     )

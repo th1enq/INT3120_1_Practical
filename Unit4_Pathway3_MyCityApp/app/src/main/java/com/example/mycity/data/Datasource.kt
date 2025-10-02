@@ -9,28 +9,28 @@ object Datasource {
         icon = R.drawable.restaurant_icon,
         list = listOf(
             Place(
-                name = R.string.pho_gia_truyen_title,
-                description = R.string.pho_gia_truyen_description,
-                address = R.string.pho_gia_truyen_address,
-                photo = R.drawable.pho_gia_truyen
+                name = R.string.kavkaz_title,
+                description = R.string.kavkaz_description,
+                address = R.string.kavkaz_address,
+                photo = R.drawable.kavkaz
             ),
             Place(
-                name = R.string.bun_cha_dac_kim_title,
-                description = R.string.bun_cha_dac_kim_description,
-                address = R.string.bun_cha_dac_kim_address,
-                photo = R.drawable.bun_cha_dac_kim
+                name = R.string.genacvale_title,
+                description = R.string.genacvale_description,
+                address = R.string.genacvale_address,
+                photo = R.drawable.genacvale
             ),
             Place(
-                name = R.string.madame_hiên_title,
-                description = R.string.madame_hiên_description,
-                address = R.string.madame_hiên_address,
-                photo = R.drawable.madame_hien
+                name = R.string.black_angus_title,
+                description = R.string.black_angus_description,
+                address = R.string.black_angus_address,
+                photo = R.drawable.blackangus
             ),
             Place(
-                name = R.string.quan_an_ngon_title,
-                description = R.string.quan_an_ngon_description,
-                address = R.string.quan_an_ngon_address,
-                photo = R.drawable.quan_an_ngon
+                name = R.string.sakurada_title,
+                description = R.string.sakurada_description,
+                address = R.string.sakurada_address,
+                photo = R.drawable.sakurada
             )
         )
     )
@@ -40,16 +40,16 @@ object Datasource {
         icon = R.drawable.bar_icon,
         list = listOf(
             Place(
-                name = R.string.bia_hoi_corner_title,
-                description = R.string.bia_hoi_corner_description,
-                address = R.string.bia_hoi_corner_address,
-                photo = R.drawable.bia_hoi_corner
+                name = R.string.beer_academy_title,
+                description = R.string.beer_academy_description,
+                address = R.string.beer_academy_address,
+                photo = R.drawable.beeracademy
             ),
             Place(
-                name = R.string.summit_lounge_title,
-                description = R.string.summit_lounge_description,
-                address = R.string.summit_lounge_address,
-                photo = R.drawable.summit_lounge
+                name = R.string.dargett_title,
+                description = R.string.dargett_description,
+                address = R.string.dargett_address,
+                photo = R.drawable.dargett
             )
         )
     )
@@ -58,16 +58,16 @@ object Datasource {
         icon = R.drawable.nature_icon,
         list=listOf(
             Place(
-                name = R.string.hoan_kiem_lake_title,
-                description = R.string.hoan_kiem_lake_description,
-                address = R.string.hoan_kiem_lake_address,
-                photo = R.drawable.hoan_kiem_lake
+                name = R.string.lovers_park_title,
+                description = R.string.lovers_park_description,
+                address = R.string.lovers_park_address,
+                photo = R.drawable.loverspark
             ),
             Place(
-                name = R.string.lenin_park_title,
-                description = R.string.lenin_park_description,
-                address = R.string.lenin_park_address,
-                photo = R.drawable.thong_nhat_park
+                name = R.string.victory_park_title,
+                description = R.string.victory_park_description,
+                address = R.string.victory_park_address,
+                photo = R.drawable.victorypark
             )
         )
     )
@@ -76,22 +76,22 @@ object Datasource {
         icon=R.drawable.shops_icon,
         list = listOf(
             Place(
-                name = R.string.dong_xuan_market_title,
-                description = R.string.dong_xuan_market_description,
-                address = R.string.dong_xuan_market_address,
-                photo = R.drawable.dong_xuan_market
+                name = R.string.miniso_title,
+                description = R.string.miniso_description,
+                address = R.string.miniso_address,
+                photo = R.drawable.miniso
             ),
             Place(
-                name = R.string.vincom_ba_trieu_title,
-                description = R.string.vincom_ba_trieu_description,
-                address = R.string.vincom_ba_trieu_address,
-                photo = R.drawable.vincom_ba_trieu
+                name = R.string.rio_mall_title,
+                description = R.string.rio_mall_description,
+                address = R.string.rio_mall_address,
+                photo = R.drawable.riomall
             ),
             Place(
-                name = R.string.trang_tien_plaza_title,
-                description = R.string.trang_tien_plaza_description,
-                address = R.string.trang_tien_plaza_address,
-                photo = R.drawable.trang_tien_plaza
+                name = R.string.tsiran_title,
+                description = R.string.tsiran_description,
+                address = R.string.tsiran_address,
+                photo = R.drawable.tsiran
             )
         )
     )
@@ -101,28 +101,28 @@ object Datasource {
         icon = R.drawable.attractions_icon,
         list = listOf(
             Place(
-                name = R.string.old_quarter_title,
-                description = R.string.old_quarter_description,
-                address = R.string.old_quarter_address,
-                photo = R.drawable.old_quarter
+                name = R.string.cascade_title,
+                description = R.string.cascade_description,
+                address = R.string.cascade_address,
+                photo = R.drawable.cascade
             ),
             Place(
-                name = R.string.temple_of_literature_title,
-                description = R.string.temple_of_literature_description,
-                address = R.string.temple_of_literature_address,
-                photo = R.drawable.temple_of_literature
+                name = R.string.metro_title,
+                description = R.string.metro_description,
+                address = R.string.metro_address,
+                photo = R.drawable.metro
             ),
             Place(
-                name = R.string.ho_chi_minh_mausoleum_title,
-                description = R.string.ho_chi_minh_mausoleum_description,
-                address = R.string.ho_chi_minh_mausoleum_address,
-                photo = R.drawable.ho_chi_minh_mausoleum
+                name = R.string.northern_avenue_title,
+                description = R.string.northern_avenue_description,
+                address = R.string.northern_avenue_address,
+                photo = R.drawable.northernavenue
             ),
             Place(
-                name = R.string.long_bien_bridge_title,
-                description = R.string.long_bien_bridge_description,
-                address = R.string.long_bien_bridge_address,
-                photo = R.drawable.long_bien_bridge
+                name = R.string.vernissage_title,
+                description = R.string.vernissage_description,
+                address = R.string.vernissage_address,
+                photo = R.drawable.vernissage
             )
         )
 
