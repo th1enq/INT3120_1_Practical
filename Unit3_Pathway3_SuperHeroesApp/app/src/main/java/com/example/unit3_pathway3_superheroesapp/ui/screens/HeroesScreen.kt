@@ -3,6 +3,8 @@ package com.example.unit3_pathway3_superheroesapp.ui.screens
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Groups
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -11,13 +13,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.unit3_pathway3_superheroesapp.R
 import com.example.unit3_pathway3_superheroesapp.data.HeroesRepository
-import com.example.unit3_pathway3_superheroesapp.model.Hero
 import com.example.unit3_pathway3_superheroesapp.ui.components.HeroCard
 import com.example.unit3_pathway3_superheroesapp.ui.theme.Unit3_Pathway3_SuperHeroesAppTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HeroesScreen(modifier: Modifier = Modifier) {
+fun HeroesScreen(
+    onNavigateToTeams: () -> Unit = {},
+    modifier: Modifier = Modifier
+) {
     Scaffold(
         topBar = {
             TopAppBar(
@@ -28,6 +32,18 @@ fun HeroesScreen(modifier: Modifier = Modifier) {
                     )
                 }
             )
+        },
+        floatingActionButton = {
+            FloatingActionButton(
+                onClick = onNavigateToTeams,
+                containerColor = MaterialTheme.colorScheme.primary
+            ) {
+                Icon(
+                    imageVector = Icons.Filled.Groups,
+                    contentDescription = stringResource(R.string.view_teams),
+                    tint = MaterialTheme.colorScheme.onPrimary
+                )
+            }
         },
         modifier = modifier
     ) { innerPadding ->

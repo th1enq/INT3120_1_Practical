@@ -16,4 +16,11 @@
     <string name="hero4_description">Harnesses the power of canary to develop bravely</string>
     <string name="hero5_description">Effortlessly glides in to save the day</string>
     <string name="hero6_description">Ability to shift to any form and energize</string>
+    
+    <!-- Teams -->
+    <string name="teams_title">Superhero Teams</string>
+    <string name="team_a">Team 7 co</string>
+    <string name="team_b">Team Si ta</string>
+    <string name="back_button">Back</string>
+    <string name="view_teams">View Teams</string>
 </resources>
