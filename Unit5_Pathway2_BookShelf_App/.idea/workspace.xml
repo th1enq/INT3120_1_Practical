@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9143372b-1647-4ae1-a8d3-558165e7d195" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/androidTest/java/com/example/unit6_pathway2_inventory_app/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/java/com/example/unit6_pathway2_inventory_app/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/java/com/example/unit6_pathway2_inventory_app/ui/theme/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/java/com/example/unit6_pathway2_inventory_app/ui/theme/Theme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/java/com/example/unit6_pathway2_inventory_app/ui/theme/Type.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/app/src/test/java/com/example/unit6_pathway2_inventory_app/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Unit6_Pathway2_Inventory_App/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway1_Coroutines/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway1_Coroutines/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Amphibians/.gradle/8.12/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Amphibians/.gradle/8.12/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Amphibians/.gradle/8.12/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Amphibians/.gradle/8.12/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Amphibians/.gradle/8.12/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Amphibians/.gradle/8.12/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Amphibians/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Amphibians/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/8.12/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unit5_Pathway2_Mars_Photo/build/reports/problems/problems-report.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="34HFTDkAJ9NaLtWg8u8jxdeBdDf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/th1enq/Documents/INT3120_1_Practical/Unit5_Pathway2_BookShelf_App&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9143372b-1647-4ae1-a8d3-558165e7d195" name="Changes" comment="" />
+      <created>1760862596021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760862596021</updated>
+    </task>
+    <servers />
+  </component>
+</project>
