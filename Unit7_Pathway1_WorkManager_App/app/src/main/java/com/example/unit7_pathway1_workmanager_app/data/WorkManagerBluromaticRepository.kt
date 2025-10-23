@@ -17,6 +17,7 @@ import com.example.bluromatic.TAG_OUTPUT
 import com.example.bluromatic.getImageUri
 import com.example.bluromatic.workers.BlurWorker
 import com.example.bluromatic.workers.CleanupWorker
+import com.example.bluromatic.workers.RemoveBackgroundWorker
 import com.example.bluromatic.workers.SaveImageToFileWorker
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.mapNotNull
@@ -66,6 +67,56 @@ class WorkManagerBluromaticRepository(context: Context) : BluromaticRepository {
         continuation = continuation.then(save)
 
         // Actually start the work
+        continuation.enqueue()
+    }
+
+    /**
+     * Create the WorkRequests to remove background and save the resulting image
+     */
+    override fun applyRemoveBackground() {
+        // Add WorkRequest to Cleanup temporary images
+        var continuation = workManager
+            .beginUniqueWork(
+                IMAGE_MANIPULATION_WORK_NAME,
+                ExistingWorkPolicy.REPLACE,
+                OneTimeWorkRequest.from(CleanupWorker::class.java)
+            )
+
+        // Create low battery constraint
+        val constraints = Constraints.Builder()
+            .setRequiresBatteryNotLow(true)
+            .build()
+
+        // Create blur workers for progressive effect (blurred -> more blurred -> most blurred -> remove background)
+        val blurBuilder1 = OneTimeWorkRequestBuilder<BlurWorker>()
+            .setInputData(createInputDataForWorkRequest(1, imageUri))
+            .setConstraints(constraints)
+
+        val blurBuilder2 = OneTimeWorkRequestBuilder<BlurWorker>()
+            .setInputData(createInputDataForWorkRequest(2, imageUri))
+            .setConstraints(constraints)
+
+        val blurBuilder3 = OneTimeWorkRequestBuilder<BlurWorker>()
+            .setInputData(createInputDataForWorkRequest(3, imageUri))
+            .setConstraints(constraints)
+
+        // Add WorkRequest to remove background
+        val removeBackgroundBuilder = OneTimeWorkRequestBuilder<RemoveBackgroundWorker>()
+            .setInputData(createInputDataForWorkRequest(0, imageUri))
+            .setConstraints(constraints)
+
+        // Add WorkRequest to save the final image
+        val save = OneTimeWorkRequestBuilder<SaveImageToFileWorker>()
+            .addTag(TAG_OUTPUT)
+            .build()
+
+        continuation = continuation
+            .then(blurBuilder1.build())
+            .then(blurBuilder2.build())
+            .then(blurBuilder3.build())
+            .then(removeBackgroundBuilder.build())
+            .then(save)
+
         continuation.enqueue()
     }
 

@@ -15,6 +15,10 @@ object BlurAmountData {
         BlurAmount(
             blurAmountRes = R.string.blur_lv_3,
             blurAmount = 3
+        ),
+        BlurAmount(
+            blurAmountRes = R.string.remove_background,
+            blurAmount = 4
         )
     )
 }

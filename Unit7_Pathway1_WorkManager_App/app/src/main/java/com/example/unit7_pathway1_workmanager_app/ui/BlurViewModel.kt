@@ -52,6 +52,14 @@ class BlurViewModel(private val bluromaticRepository: BluromaticRepository) : Vi
     }
 
     /**
+     * Call the method from repository to create the WorkRequest to remove background
+     * with progressive blur effect
+     */
+    fun applyRemoveBackground() {
+        bluromaticRepository.applyRemoveBackground()
+    }
+
+    /**
      * Call method from repository to cancel any ongoing WorkRequest
      * */
     fun cancelWork() {

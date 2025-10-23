@@ -25,6 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.ImageProgressActivity"
+            android:exported="false"
+            android:label="Image Processing"
+            android:theme="@style/Theme.Unit7_Pathway1_WorkManager_App" />
     </application>
 
 </manifest>

@@ -52,6 +52,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.bluromatic.R
 import com.example.bluromatic.data.BlurAmount
+import com.example.bluromatic.OPERATION_REMOVE_BACKGROUND
 import com.example.unit7_pathway1_workmanager_app.ui.theme.Unit7_Pathway1_WorkManager_AppTheme
 
 @Composable
@@ -73,6 +74,7 @@ fun BluromaticScreen(blurViewModel: BlurViewModel = viewModel(factory = BlurView
             blurUiState = uiState,
             blurAmountOptions = blurViewModel.blurAmount,
             applyBlur = blurViewModel::applyBlur,
+            applyRemoveBackground = blurViewModel::applyRemoveBackground,
             cancelWork = blurViewModel::cancelWork,
             modifier = Modifier
                 .verticalScroll(rememberScrollState())
@@ -86,6 +88,7 @@ fun BluromaticScreenContent(
     blurUiState: BlurUiState,
     blurAmountOptions: List<BlurAmount>,
     applyBlur: (Int) -> Unit,
+    applyRemoveBackground: () -> Unit,
     cancelWork: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -108,9 +111,22 @@ fun BluromaticScreenContent(
         )
         BlurActions(
             blurUiState = blurUiState,
-            onStartClick = { applyBlur(selectedValue) },
+            selectedValue = selectedValue,
+            onStartClick = { 
+                if (selectedValue == OPERATION_REMOVE_BACKGROUND) {
+                    applyRemoveBackground()
+                } else {
+                    applyBlur(selectedValue)
+                }
+            },
             onSeeFileClick = { currentUri ->
-                showBlurredImage(context, currentUri)
+                if (selectedValue == OPERATION_REMOVE_BACKGROUND) {
+                    // Start ImageProgressActivity to show progressive changes
+                    val intent = Intent(context, ImageProgressActivity::class.java)
+                    context.startActivity(intent)
+                } else {
+                    showBlurredImage(context, currentUri)
+                }
             },
             onCancelClick = { cancelWork() },
             modifier = Modifier.fillMaxWidth()
@@ -121,6 +137,7 @@ fun BluromaticScreenContent(
 @Composable
 private fun BlurActions(
     blurUiState: BlurUiState,
+    selectedValue: Int,
     onStartClick: () -> Unit,
     onSeeFileClick: (String) -> Unit,
     onCancelClick: () -> Unit,
@@ -212,6 +229,7 @@ fun BluromaticScreenContentPreview() {
         BluromaticScreenContent(
             blurUiState = BlurUiState.Default,
             blurAmountOptions = listOf(BlurAmount(R.string.blur_lv_1, 1)),
+            {},
             {},
             {},
             modifier = Modifier.padding(16.dp)

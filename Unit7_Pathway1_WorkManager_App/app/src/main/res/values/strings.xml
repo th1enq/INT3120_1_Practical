@@ -16,6 +16,7 @@
     <string name="blur_lv_1">A little blurred</string>
     <string name="blur_lv_2">More blurred</string>
     <string name="blur_lv_3">The most blurred</string>
+    <string name="remove_background">Remove background</string>
     <string name="cancel_work">Cancel Work</string>
 
     <!-- Messages -->
@@ -26,6 +27,7 @@
     <string name="blurring_image">Blurring image</string>
     <string name="saving_image">Saving image</string>
     <string name="cleaning_up_files">Cleaning up old temporary files</string>
+    <string name="removing_background">Removing background</string>
 
     <!-- Errors -->
     <string name="invalid_input_uri">Invalid input uri</string>
@@ -33,4 +35,5 @@
     <string name="writing_to_mediaStore_failed">Writing to MediaStore failed</string>
     <string name="error_saving_image">Error saving image</string>
     <string name="error_cleaning_file">Error cleaning up old temporary files</string>
+    <string name="error_removing_background">Error removing background</string>
 </resources>

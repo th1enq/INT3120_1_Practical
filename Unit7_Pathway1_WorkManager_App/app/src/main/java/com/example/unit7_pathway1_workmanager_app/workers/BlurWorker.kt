@@ -30,8 +30,8 @@ class BlurWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx, 
 
         return withContext(Dispatchers.IO) {
 
-            // This is an utility function added to emulate slower work.
-            delay(DELAY_TIME_MILLIS)
+            // Delay 1 second for each blur step as requested
+            delay(1000)
 
             return@withContext try {
                 require(!resourceUri.isNullOrBlank()) {
